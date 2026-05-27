@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+iimport { useState, useRef, useEffect } from 'react';
 
 const GEMINI_API_KEY = 'import.meta.env.VITE_GEMINI_KEY;';
 const SHOPEE_APP_ID = '18361270024';
