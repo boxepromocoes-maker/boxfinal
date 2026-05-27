@@ -1,6 +1,6 @@
-iimport { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
-const GEMINI_API_KEY = 'import.meta.env.VITE_GEMINI_KEY;';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_KEY;
 const SHOPEE_APP_ID = '18361270024';
 const SHOPEE_SECRET = 'DBEBG2C4E7FFS4O2ZGEJI6O7J7L5CRGH';
 
