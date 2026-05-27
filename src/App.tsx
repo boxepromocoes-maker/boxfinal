@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_KEY as string;
+
 const SHOPEE_APP_ID = '18361270024';
 const SHOPEE_SECRET = 'DBEBG2C4E7FFS4O2ZGEJI6O7J7L5CRGH';
 
@@ -269,7 +269,7 @@ export default function BoxePromocoes() {
 
     try {
       const geminiRes = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+        `/api/gemini`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
